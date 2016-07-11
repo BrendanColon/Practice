@@ -12,6 +12,7 @@ etc.
 
 When this is read into a variable and given column names I can't slice by column name without getting an error
 ```{r}
+import pandas as pd
 servo = pd.read_csv('http://greenleafytv.com/Module2/Datasets/servo.data', names=['motor', 'screw', 'pgain', 'vgain', 'class'])
 servo.loc['vgain']
 ```
